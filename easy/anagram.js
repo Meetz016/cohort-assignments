@@ -6,6 +6,8 @@
 
 function isAnagram(str1, str2) {
   const arr = new Array(26).fill(0);
+  str1=str1.toLowerCase()
+  str2=str2.toLowerCase()
   if(str1.length!=str2.length){
     return false;
   }
@@ -25,4 +27,3 @@ function isAnagram(str1, str2) {
 }
 
 module.exports = isAnagram; 
-console.log(isAnagram('rasp','pasrtt'))

@@ -72,7 +72,6 @@ describe('Todo', () => {
 	test('remove and update with invalid indexes', () => {
 		todoList.add('Task 1');
 		todoList.add('Task 2');
-
 		todoList.remove(5);
 		expect(todoList.getAll()).toEqual(['Task 1', 'Task 2']);
 
